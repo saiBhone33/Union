@@ -1,0 +1,81 @@
+/* Nav Bar */
+.navbar {
+    background-color: #1341b5;
+    padding: 0.5px;
+}
+.navbar-brand   {
+    font-weight: 500;
+    font-size: 24px;
+}
+.navbar-text    {
+    color: white;
+}
+.navbar-toggler {
+    border: none;
+}
+.nav-link   {
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+/* OffCanvas */
+.offcanvas  {
+    background-color: #1341b5;
+}
+.offcanvas-header   {
+    color: white;
+}
+
+/* Hero section */
+.hero-section   {
+    background: url(./Image/ase.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section .container  {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.hero-section p {
+    font-size: 20px;
+}
+.hero-section button    {
+    width: 130px;
+}
+
+/* DropDown */
+.dropdown:hover .dropdown-menu  {
+    display: block;
+}
+
+/* Footer */
+.col li a {
+    text-decoration: none;
+    color: white;
+}
+footer  {
+    background-color: #1341b5;
+    color: white;
+    padding: 10px;
+}
+@media (min-width: 991px)   {
+    .nav-link::before   {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009959;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+
+    }
+}

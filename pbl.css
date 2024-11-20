@@ -1,0 +1,16 @@
+@media screen and (max-width:900px){
+    .carousel-item img{
+        height: 350px;
+    }
+}
+.eco{
+    background-color: #82CAFF;
+    box-shadow:5px 5px  rgba(159, 161, 159, 0.795) ;
+}
+.wea{
+    background-color: #82CAFF;
+}
+.eth{
+    background-color: #82CAFF;
+   
+}
